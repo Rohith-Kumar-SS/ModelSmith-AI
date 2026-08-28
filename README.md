@@ -1,4 +1,4 @@
-# ModelSmithAI (Standalone)
+# ModelSmithAI
 
 **Your Autonomous Model Factory — from a plain-English request to a security-scanned, ready-to-use model in minutes.**
 
