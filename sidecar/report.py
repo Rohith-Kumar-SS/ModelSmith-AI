@@ -28,7 +28,7 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import (SimpleDocTemplate, Paragraph, Spacer, Table,
                                 TableStyle, HRFlowable)
 
-# --- brand palette (matches the Kernels site) ---
+# --- brand palette (matches the ModelSmithAI web UI) ---
 INK = colors.HexColor("#14142b")
 INK_SOFT = colors.HexColor("#5b5b78")
 PRIMARY = colors.HexColor("#4f46e5")
@@ -77,7 +77,7 @@ def generate_report(state_path: str, out_path: str | None = None) -> dict:
     request = state.get("request", "")
 
     # ---- header ----
-    story.append(Paragraph("Kernels — Model Audit Report", st["KTitle"]))
+    story.append(Paragraph("ModelSmithAI — Model Audit Report", st["KTitle"]))
     story.append(Paragraph(
         f"Generated {datetime.now().strftime('%Y-%m-%d %H:%M')} · "
         f"Autonomous multi-agent build", st["KSub"]))

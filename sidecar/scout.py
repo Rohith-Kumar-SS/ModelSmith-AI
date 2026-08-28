@@ -32,7 +32,7 @@ from typing import Callable
 
 import requests
 
-USER_AGENT = "ModelQuarantineDesk/0.1 (hackathon; contact: student@example.edu)"
+USER_AGENT = "ModelSmithAI/1.0 (+https://github.com/Rohith-Kumar-SS/ModelSmith-AI---Standalone)"
 TIMEOUT = 20
 
 

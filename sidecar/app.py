@@ -1,4 +1,4 @@
-# app.py - Real sidecar for the Kernels model-building system.
+# app.py - FastAPI sidecar for the ModelSmithAI agent system.
 # Exposes each agent as an endpoint, a synchronous /build_model, and an
 # ASYNC build (/build_async + /status/{job_id}) so a website can poll live
 # progress while the loop runs.
@@ -25,7 +25,7 @@ import sentinel as sentinel_agent
 import orchestrator as orch
 import report as report_gen
 
-app = FastAPI(title="Kernels - agent sidecar")
+app = FastAPI(title="ModelSmithAI - agent sidecar")
 
 # allow the local website (any origin in dev) to call us
 app.add_middleware(
@@ -161,7 +161,7 @@ def download_report(path: str):
     if not os.path.exists(path):
         return {"error": f"report not found: {path}"}
     return FileResponse(path, media_type="application/pdf",
-                        filename="kernels_audit_report.pdf")
+                        filename="modelsmith_audit_report.pdf")
 
 # ---------------------------------------------------------------- Orchestrator (sync)
 class BuildReq(BaseModel):

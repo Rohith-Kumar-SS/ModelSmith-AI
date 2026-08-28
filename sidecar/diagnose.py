@@ -25,7 +25,7 @@ import json
 import urllib.request
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
-OLLAMA_MODEL = os.environ.get("KERNELS_LLM", "qwen2.5:3b")
+OLLAMA_MODEL = os.environ.get("MODELSMITH_LLM", "qwen2.5:3b")
 OLLAMA_TIMEOUT = 40  # seconds; if it takes longer we fall back
 
 

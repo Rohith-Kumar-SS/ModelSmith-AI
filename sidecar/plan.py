@@ -109,7 +109,7 @@ def plan_heuristic(user_request: str,
 # LLM-based class extraction (for messy natural-language requests)
 # ----------------------------------------------------------------------------
 OLLAMA_URL = "http://localhost:11434/api/generate"
-OLLAMA_MODEL = os.environ.get("KERNELS_LLM", "qwen2.5:3b")
+OLLAMA_MODEL = os.environ.get("MODELSMITH_LLM", "qwen2.5:3b")
 OLLAMA_TIMEOUT = 30
 
 
