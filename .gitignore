@@ -1,0 +1,20 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Runtime output (images, models, run state, audit reports)
+storage/
+runs/
+*.pt
+*.safetensors
+*.pdf
+
+# Local config
+.env
+
+# OS
+.DS_Store
+Thumbs.db

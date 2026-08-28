@@ -1,0 +1,19 @@
+# Web layer
+fastapi
+uvicorn[standard]
+
+# Vision / training
+torch
+open_clip_torch
+scikit-learn
+numpy
+pillow
+
+# Data fetching
+requests
+
+# Security
+safetensors
+
+# Reporting
+reportlab
